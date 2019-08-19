@@ -4,8 +4,7 @@ from pdfminer.converter import TextConverter
 from pdfminer.pdfinterp import PDFPageInterpreter
 from pdfminer.pdfinterp import PDFResourceManager
 from pdfminer.pdfpage import PDFPage
-
-# help(TextConverter)
+from edit_text import find_all
 
 
 def extract_text_by_page(pdf_path):
@@ -20,7 +19,9 @@ def extract_text_by_page(pdf_path):
             page_interpreter.process_page(page)
 
             text = fake_file_handle.getvalue()
-            yield text
+            dict = find_all(text)
+            yield dict
+            # yield text
 
             # close open handles
             converter.close()
@@ -29,8 +30,10 @@ def extract_text_by_page(pdf_path):
 
 def extract_text(pdf_path):
     for page in extract_text_by_page(pdf_path):
-        print(page)
-        print()
+        dict = find_all(page)
+        # print(page)
+        # print()
+        return dict
 
 
 if __name__ == '__main__':

@@ -11,13 +11,12 @@ def export_as_json(pdf_path, json_path):
 
     counter = 1
     for page in extract_text_by_page(pdf_path):
-        text = page[0:100]
+        text = page  # можно ли это убрать?
         print('')
         page = {'Page_{}'.format(counter): text}
         data['Pages'].append(page)
         counter += 1
 
-# help(json.dump)
     with open(json_path, 'w') as fh:
         json.dump(data, fh, ensure_ascii=False)
 
