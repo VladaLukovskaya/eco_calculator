@@ -1,6 +1,10 @@
-print(ord(' '))
-print('This is:', chr(32), 'yes')
+first = ['1', '2', '3']
+second = ['a', 'b', 'c']
+third = ['om', 'am']
+common_list = list()
 
-bla = '2 3 462 31 7hjfvkd'
-new_bla = bla.strip()
-print(new_bla)
+for i in range(3):
+    li = input()
+    common_list.append(li)
+
+print(common_list)

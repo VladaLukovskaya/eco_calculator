@@ -13,7 +13,7 @@ def export_as_json(pdf_path, json_path):
     for page in extract_text_by_page(pdf_path):
         text = page  # можно ли это убрать?
         print('')
-        page = {'Page_{}'.format(counter): text}
+        # page = {'Page_{}'.format(counter): text}
         data['Pages'].append(page)
         counter += 1
 

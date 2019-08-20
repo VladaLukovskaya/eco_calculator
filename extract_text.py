@@ -11,7 +11,7 @@ def extract_text_by_page(pdf_path):
     with open(pdf_path, 'rb') as fh:
         for page in PDFPage.get_pages(fh,
                                       caching=True,
-                                      check_extractable=True, maxpages=10):
+                                      check_extractable=True):
             resource_manager = PDFResourceManager()
             fake_file_handle = io.StringIO()
             converter = TextConverter(resource_manager, fake_file_handle)
@@ -19,8 +19,9 @@ def extract_text_by_page(pdf_path):
             page_interpreter.process_page(page)
 
             text = fake_file_handle.getvalue()
-            dict = find_all(text)
-            yield dict
+            all_code_and_name = find_all(text)
+            # dict = find_all(text)
+            yield all_code_and_name
             # yield text
 
             # close open handles
@@ -30,10 +31,11 @@ def extract_text_by_page(pdf_path):
 
 def extract_text(pdf_path):
     for page in extract_text_by_page(pdf_path):
-        dict = find_all(page)
+        code_and_name = find_all(page)
+        print(code_and_name)
         # print(page)
         # print()
-        return dict
+        return code_and_name
 
 
 if __name__ == '__main__':

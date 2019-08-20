@@ -5,19 +5,16 @@ from extract_text import extract_text_by_page
 
 
 def export_as_csv(pdf_path, csv_path):
-    filename = os.path.splitext(os.path.basename(pdf_path))[0]
-
-    counter = 1
     with open(csv_path, 'w') as csv_file:
         writer = csv.writer(csv_file)
-        for page in extract_text_by_page(pdf_path):
-            text = page[0:100]
-            words = text.split()
-            writer.writerow(words)
+        common_list = extract_text_by_page(pdf_path)
+        for elem in common_list:
+            for new_elem in elem:
+                writer.writerow(new_elem)
+
 
 
 if __name__ == '__main__':
-    pdf_path = 'w9.pdf'
-    csv_path = 'w9.csv'
+    pdf_path = 'Fkko2019.pdf'
+    csv_path = 'Fkko2019.csv'
     export_as_csv(pdf_path, csv_path)
-

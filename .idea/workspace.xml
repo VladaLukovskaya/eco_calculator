@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2946a7-6433-49e8-8353-d7a4b160beb9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/convert_to_csv.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edit_text.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.~lock.Fkko2019.csv#" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fkko2019.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fw9.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fkko2019.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Fkko2019_new.json" beforeDir="false" afterPath="$PROJECT_DIR$/Fkko2019_new.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/convert_to_csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/convert_to_csv.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/convert_to_json.py" beforeDir="false" afterPath="$PROJECT_DIR$/convert_to_json.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edit_text.py" beforeDir="false" afterPath="$PROJECT_DIR$/edit_text.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/extract_text.py" beforeDir="false" afterPath="$PROJECT_DIR$/extract_text.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
     </list>
@@ -36,7 +40,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Documents/Python" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -50,7 +54,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test_convert">
+  <component name="RunManager" selected="Python.convert_to_csv">
+    <configuration name="convert_to_csv" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="eco_calculator" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/convert_to_csv.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="convert_to_json" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="eco_calculator" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -93,7 +118,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pdf_miner_six" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="extract_text" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="eco_calculator" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -114,7 +139,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_convert" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="eco_calculator" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -126,28 +151,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/convert_to_json.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test_edit" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="eco_calculator" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/edit_text.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -158,11 +162,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.test_convert" />
-        <item itemvalue="Python.pdf_miner_six" />
+        <item itemvalue="Python.convert_to_csv" />
         <item itemvalue="Python.convert_to_json" />
         <item itemvalue="Python.edit_text" />
-        <item itemvalue="Python.test_edit" />
+        <item itemvalue="Python.extract_text" />
+        <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
