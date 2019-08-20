@@ -4,7 +4,7 @@ dict = {}
 def edit_code(code):
     if len(code) == 11:
         new_code = code[:]
-        code = [' ' for i in range(15)]
+        code = [' ' for i in range(16)]
         code[0] = new_code[0]
         code[2] = new_code[1]
         code[3] = new_code[2]
@@ -15,7 +15,7 @@ def edit_code(code):
         code[10] = new_code[7]
         code[12] = new_code[8]
         code[13] = new_code[9]
-        code[14] = new_code[10]
+        code[15] = new_code[10]
         code = ''.join(code)
     else:
         code = str(code)
