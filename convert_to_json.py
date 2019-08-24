@@ -4,7 +4,7 @@ import os
 from extract_text import extract_text_by_page
 
 
-def export_as_json(pdf_path, json_path):
+def export_as_json(pdf_path, json_path):  # конвертируем pdf в json
     filename = os.path.splitext(os.path.basename(pdf_path))[0]
     data = {'Filename': filename}
     data['Pages'] = []
@@ -15,6 +15,7 @@ def export_as_json(pdf_path, json_path):
         print('')
         # page = {'Page_{}'.format(counter): text}
         data['Pages'].append(page)
+        print(data)
         counter += 1
 
     with open(json_path, 'w') as fh:
@@ -22,5 +23,5 @@ def export_as_json(pdf_path, json_path):
 
 if __name__ == '__main__':
     pdf_path = 'Fkko2019.pdf'
-    json_path = 'Fkko2019_new.json'
+    json_path = 'Fkko2019.json'
     export_as_json(pdf_path, json_path)
